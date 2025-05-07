@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sadio Kanouté - Développeur Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Sadio Kanouté</div>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="mode-toggle" title="Changer de mode">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Salut, je suis <span class="highlight">Sadio Kanouté</span></h1>
+      <p>Développeur Web Junior à la recherche d'une alternance — je conçois des interfaces propres, modernes et efficaces.</p>
+      <a href="CV_DEV_KANOUTE_SADIO.pdf" download class="btn">📄 Télécharger mon CV</a>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-img">
+        <img src="img_site.jpg" alt="Photo de Sadio Kanouté">
+      </div>
+      <div class="about-text">
+        <h2>À propos</h2>
+        <p>
+          Je suis Sadio Kanouté, développeur web junior actuellement en formation DSP Intégrateur Web au CNAM.
+          En septembre 2025, j’intègre un Bachelor Développement Web à Digital Campus pour me spécialiser davantage.
+          Curieux, rigoureux et motivé, je suis à la recherche d’une alternance où je pourrai progresser en équipe,
+          participer à des projets concrets, et développer mes compétences techniques tout en apportant ma fiabilité et mon engagement.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Compétences</h2>
+      <div class="skills-cards">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <p>HTML / CSS</p>
+          <small>Maîtrisé</small>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <p>JavaScript</p>
+          <small>Niveau intermédiaire</small>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-php"></i>
+          <p>PHP</p>
+          <small>Niveau intermédiaire</small>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <p>SQL</p>
+          <small>Niveau intermédiaire</small>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-wordpress"></i>
+          <p>WordPress</p>
+          <small>Bases</small>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-node-js"></i>
+          <p>Node.js</p>
+          <small>En apprentissage</small>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-project-diagram"></i>
+          <p>Symfony</p>
+          <small>En apprentissage</small>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-android"></i>
+          <p>Flutter</p>
+          <small>En apprentissage</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projets</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Refonte du site – Association ESSOR</h3>
+          <p>Refonte complète et mise à jour du site vitrine de l’association ESSOR sous WordPress : amélioration du design, optimisation SEO et contenus, compatibilité mobile. <br>
+            <a href="https://association-essor.org/" target="_blank" title="Visitez le site officiel de l'Association ESSOR">
+              <i class="fas fa-globe"></i> Association ESSOR – Langues et Partages Culturels
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/xyzabc" method="POST">
+        <input type="text" name="nom" placeholder="Votre nom" required />
+        <input type="email" name="email" placeholder="Votre email" required />
+        <input type="text" name="sujet" placeholder="Sujet" required />
+        <textarea name="message" placeholder="Votre message" rows="6" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://github.com/ton_pseudo" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sadio-kanoute-729171300" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:05KANOUTESADIOKA@GMAIL.COM">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Kanouté Sadio. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
