@@ -6,6 +6,9 @@
   <title>Sadio Kanouté - Développeur Web</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="description" content="Portfolio de Sadio Kanouté – Développeur Web Junior en alternance. HTML, CSS, JS, PHP, SQL, WordPress.">
+  <meta name="author" content="Sadio Kanouté">
+
 
   <style>
     h1 {
@@ -22,7 +25,7 @@
         <li><a href="#about">À propos</a></li>
         <li><a href="#skills">Compétences</a></li>
         <li><a href="#projects">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#Contact.form">Contact</a></li>
         <li><button id="mode-toggle" title="Changer de mode">🌙</button></li>
       </ul>
     </nav>
@@ -101,8 +104,11 @@
       <h2>Projets</h2>
       <div class="project-list">
         <div class="project-card">
+          <img src="essor_project.png" alt="Projet ESSOR" style="width:100%; border-radius:8px; margin-bottom:1rem;">
           <h3>Refonte du site – Association ESSOR</h3>
-          <p>Refonte complète et mise à jour du site vitrine de l’association ESSOR sous WordPress : amélioration du design, optimisation SEO et contenus, compatibilité mobile. <br>
+          <p>
+            Refonte complète et mise à jour du site vitrine de l’association ESSOR sous WordPress :
+            amélioration du design, optimisation SEO et contenus, compatibilité mobile. <br>
             <a href="https://association-essor.org/" target="_blank" title="Visitez le site officiel de l'Association ESSOR">
               <i class="fas fa-globe"></i> Association ESSOR – Langues et Partages Culturels
             </a>
@@ -111,22 +117,33 @@
       </div>
     </section>
     
+    
 
-    <section id="contact" class="contact">
+    <section id="Contact.form" class="contact">
       <h2>Contact</h2>
-      <form action="https://formspree.io/f/xyzabc" method="POST">
-        <input type="text" name="nom" placeholder="Votre nom" required />
-        <input type="email" name="email" placeholder="Votre email" required />
-        <input type="text" name="sujet" placeholder="Sujet" required />
-        <textarea name="message" placeholder="Votre message" rows="6" required></textarea>
+      <form action="https://formspree.io/f/xvgawoqq" method="POST">
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom" id="nom" required>
+      
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" required>
+      
+        <label for="telephone">Téléphone :</label>
+        <input type="text" name="telephone" id="telephone" required>
+      
+        <label for="message">Message :</label>
+        <textarea name="message" id="message" required></textarea>
+      
         <button type="submit">Envoyer</button>
       </form>
+      
+      
     </section>
   </main>
 
   <footer>
     <div class="social-icons">
-      <a href="https://github.com/ton_pseudo" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://github.com/KablackMorales" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/sadio-kanoute-729171300" target="_blank">
         <i class="fab fa-linkedin"></i>
       </a>
